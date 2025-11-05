@@ -28,24 +28,6 @@ arrayLengths = sorted([len(f) for f in array], reverse=True)
 spacing = 20
 topOffset = 20
 migrationDistances = [topOffset + i * spacing for i in range(len(arrayLengths))]
-#
-# plt.figure(figsize=(4, 10))
-# plt.gca().set_facecolor("black")
-#
-# lane_x = 2
-# for dist, length in zip(migrationDistances, arrayLengths):
-#     plt.hlines(dist, lane_x - 0.4, lane_x + 0.4, color="white", linewidth=4)
-#     plt.text(lane_x + 0.6, dist, f"{length} bp", color="white",
-#              va='center', fontsize=8)
-#
-# plt.xlim(0, 5)
-# plt.ylim(0, max(migrationDistances) + 20)
-# plt.gca().invert_yaxis()
-# plt.xticks([])
-# plt.yticks([])
-# plt.title("Simulated Electrophoresis Gel", color="white")
-# plt.show()
-
 
 # normalize y coordinate
 topOffset = 20
